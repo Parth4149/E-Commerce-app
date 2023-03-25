@@ -1,0 +1,42 @@
+.highlight__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  /* padding: 0 24px; */
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.highlight__img {
+  border: 2px solid #7342d65d;
+  color: var(--primary-color);
+  width: 6.25rem;
+  height: 6.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.highlight__subtitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.highlight__para {
+  text-align: center;
+  max-width: 80%;
+}
+
+@media (max-width: 550px) {
+  .highlight {
+    width: 100%;
+  }
+  .highlight:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,136 @@
+.book {
+  /* width: 22%; */
+  width: calc(100% / 4);
+  /* padding: 1rem; */
+  /* margin-bottom: 1rem; */
+  /* background: var(--white); */
+  color: var(--textColor);
+  border-radius: var(--borderRadius);
+  /* box-shadow: var(--shadow-2); */
+  transition: var(--transition);
+  padding: 1.5rem;
+}
+/* .book:hover {
+  box-shadow: var(--shadow-4);
+} */
+.book__inner {
+  box-shadow: var(--shadow-2);
+}
+.book__inner:hover {
+  box-shadow: var(--shadow-4);
+}
+
+.book__img {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  /* max-height: 20rem;
+  max-width: 15rem; */
+  transition: all 300ms ease;
+}
+
+.book__img--skeleton {
+  width: 100%;
+  max-width: 250px;
+  /* height: 20rem; */
+  background-color: rgb(204, 204, 204);
+  margin-bottom: 8px;
+}
+
+.skeleton {
+  width: 100%;
+  background-color: rgb(227, 227, 227) !important;
+  margin-bottom: 0.5rem;
+}
+
+.book__title--skeleton {
+  width: 100%;
+  height: 1.3rem;
+}
+
+.book__rating--skeleton {
+  width: 40%;
+  height: 1rem;
+}
+
+.book__price--skeleton {
+  width: 80%;
+  height: 1.1rem;
+}
+
+.book__img--wrapper,
+.book__img--skeleton {
+  height: 18rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  display: flex;
+}
+.book__title {
+  font-size: 1.25rem;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  /* margin-bottom: 0.5rem; */
+  text-overflow: ellipsis;
+}
+.book__title--link {
+  color: var(--grey-700);
+}
+.book__ratings {
+  /* margin-bottom: 8px; */
+  color: #fabf2a;
+}
+.book__price {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.book__price--normal {
+  text-decoration: line-through;
+  padding-right: 6px;
+  color: #bfbfbf;
+  font-weight: 400;
+  color: var(--grey-400);
+  font-size: var(--small-text);
+}
+.book__price--sale {
+  padding-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .book {
+    padding: 1rem;
+  }
+  .book__img--wrapper,
+  .book__img--skeleton {
+    height: 13rem;
+  }
+  .book__title,
+  .book__price {
+    font-size: var(--small-text);
+  }
+  .book__ratings,
+  .book__price--normal {
+    font-size: var(--extra-small-text);
+  }
+}
+
+@media (max-width: 480px) {
+  .book {
+    width: calc(100% / 2);
+    padding: 0.5rem;
+  }
+  .book__img--wrapper,
+  .book__img--skeleton {
+    height: 12rem;
+    margin-bottom: 2px;
+  }
+
+  .book__title--skeleton {
+    height: 1rem;
+  }
+  .book__rating--skeleton {
+    height: 0.8rem;
+  }
+  .book__price--skeleton {
+    height: 0.9rem;
+  }
+}

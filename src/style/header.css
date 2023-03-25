@@ -1,0 +1,146 @@
+.logo {
+  width: 160px;
+}
+@media (max-width: 480px) {
+  .logo {
+    max-width: 6rem;
+  }
+}
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+  color: var(--primary-color);
+}
+
+.nav__list {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link--primary {
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+.nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 20px;
+  position: relative;
+  margin-left: 8px;
+}
+
+.cart__length {
+  background-color: red;
+  color: var(--white);
+  width: 1rem;
+  height: 1rem;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 12px;
+  right: -2px;
+  pointer-events: none;
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  color: var(--primary-color);
+}
+.menu__backdrop {
+  position: fixed;
+  background-color: #242424f7;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__list {
+  padding: 1.5rem 0;
+}
+.menu__link {
+  color: var(--white);
+  font-size: 40px;
+}
+.btn__menu--close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  color: var(--grey-100);
+  font-size: 2rem;
+}
+.btn__checkout {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+/* 
+Landing
+*/
+#landing {
+  background-color: rgba(115, 66, 214, 0.1);
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__description button {
+  margin: 0.5rem 0;
+}
+
+.header__img--wrapper {
+  padding: 20px;
+  margin: 0 auto;
+  /* Added this after the tutorial to 
+  show it over the wave on larger screens */
+  z-index: 50;
+
+  /* Added this after the tutorial to 
+  make landing page responsive on laptops */
+  max-height: 30rem;
+  max-width: 30rem;
+}
